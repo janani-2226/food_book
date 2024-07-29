@@ -1,0 +1,168 @@
+.bl {
+  background-color: #e7e0d9;
+  height:100%;
+}
+
+.n1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 40px;
+  text-transform: uppercase;
+  color: rgb(233, 213, 191);
+}
+
+.c1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(65, 56, 46);
+}
+
+.c2 {
+  /* font-size: 50px; */
+  font-weight: 600;
+  color: rgb(65, 56, 46);
+}
+
+.input1 {
+  height: 40px;
+}
+
+.s1 {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.l1 {
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.l2 {
+  /* margin-left: 5px; */
+}
+
+.op {
+  opacity: 30%;
+}
+
+.b1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(65, 56, 46);
+}
+
+.myrecipe {
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: 650;
+  text-transform: uppercase;
+  color: rgb(65, 56, 46);
+}
+
+.recipetext {
+  font-weight: 630;
+  color: rgb(65, 56, 46);
+}
+
+.search-bar {
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.search-bar .input-group-prepend .input-group-text {
+  background-color: transparent;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.search-bar .form-control {
+  border: none;
+  box-shadow: none;
+  font-size: 1.25rem;
+  padding-left: 0;
+}
+
+.search-bar .form-control:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Popup css */
+.container-fluid.menubg {
+  transition: filter 0.3s ease;
+}
+
+.popup-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Optional: to add a dark overlay */
+  z-index: 999;
+  /* Ensure blur is behind popup */
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Ensure popup is on top */
+}
+
+.popup-content {
+  position: relative;
+  background-color: rgb(235, 223, 209);
+  padding: 24px;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 700px;
+  text-align: left;
+  z-index: 1001;
+  /* Ensure content is on top of background */
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 23px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+
+.popuptext {
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(65, 56, 46);
+  margin-bottom: 25px;
+  margin-top: 5px;
+  font-family: 900;
+  text-align: center;
+
+}
+
+.ing {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(65, 56, 46);
+  text-align: left;
+}
+
+/* Video Css */
+
+.menubg {
+  background-color: antiquewhite;
+  height: 100%;
+}

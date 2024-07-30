@@ -15,7 +15,7 @@ function Login() {
     },
     onSubmit: async (values) => {
       try {
-        let response = await axios.post("http://localhost:5000/login", values);
+        let response = await axios.post("https://foodbook-backend-jfk6.onrender.com/login", values);
         console.log(values);
         alert("Login Successfully");
         localStorage.setItem("token", response.data.token);

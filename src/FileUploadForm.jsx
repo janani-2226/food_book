@@ -43,13 +43,13 @@ const FileUploadForm = () => {
         const formData = new FormData();
         formData.append("file", file);
 
-        await axios.post("http://localhost:5000/upload", formData, {
+        await axios.post("https://foodbook-backend-jfk6.onrender.com/upload", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
         });
 
-        await axios.post("http://localhost:5000/create", {
+        await axios.post("https://foodbook-backend-jfk6.onrender.com/create", {
           ...data,
           image: file ? file.name : "",
         });
@@ -72,7 +72,7 @@ const FileUploadForm = () => {
 
   const fetchUploadedFiles = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/files");
+      const response = await axios.get("https://foodbook-backend-jfk6.onrender.com/files");
       setUploadedFiles(response.data.files);
     } catch (error) {
       console.error("Error fetching files:", error);

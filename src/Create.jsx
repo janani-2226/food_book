@@ -41,7 +41,7 @@ function Create() {
     },
     onSubmit: async (data, formikbag) => {
       try {
-        await axios.post("http://localhost:5000/create", data);
+        await axios.post("https://foodbook-backend-jfk6.onrender.com/create", data);
         console.log(data);
         alert("Recipe Created");
         formikbag.resetForm();

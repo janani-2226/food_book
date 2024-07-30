@@ -14,7 +14,7 @@ function Register() {
     onSubmit: async (values, formikbag) => {
       try {
         let response = await axios.post(
-          "http://localhost:5000/register",
+          "https://foodbook-backend-jfk6.onrender.com/register",
           values
         );
         console.log(values);

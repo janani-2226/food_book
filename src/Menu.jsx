@@ -11,7 +11,7 @@ function Menu() {
   // Fetch recipes from API
   async function getRecipes() {
     try {
-      const response = await axios.get("http://localhost:5000/menu");
+      const response = await axios.get("https://foodbook-backend-jfk6.onrender.com/menu");
       setRecipes(response.data);
     } catch (error) {
       console.error(error);
@@ -21,7 +21,7 @@ function Menu() {
   // Fetch uploaded files from API
   const fetchUploadedFiles = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/files");
+      const response = await axios.get("https://foodbook-backend-jfk6.onrender.com");
       setUploadedFiles(response.data.files);
     } catch (error) {
       console.error("Error fetching files:", error);
